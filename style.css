@@ -1,7 +1,10 @@
+body {
+    background-color: #FBEDED;
+}
 header {
     background-color: #FFE2E2;
     height: 80px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 10px 10px 10px;
 }
 .logo img {
     width: 60px;
@@ -9,6 +12,3 @@ header {
     border-radius: 50%;
 }
 
-nav {
-    display: none;
-}
