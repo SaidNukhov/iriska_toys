@@ -2,13 +2,49 @@ body {
     background-color: #FBEDED;
 }
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #FFE2E2;
     height: 80px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 30px;
+}
+.header_text {
+    font-family: "Montserrat";
+    letter-spacing: 3px;
 }
 .logo img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+.logo {
+    width: 60px;
+}
+.burger_menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 30px;
+}
+.burger_menu span {
+  height: 4px;
+  width: 30px;
+  background-color: #333;
+  margin: 2px 0;
+  transition: 0.4s;
+}
 
+.burger_menu.active + nav {
+    display: block;
+}
+nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 4vh;
+    width: 100%;
+    align-content: center;
+}
