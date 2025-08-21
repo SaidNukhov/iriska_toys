@@ -1,5 +1,15 @@
+* {
+    font-family: "Montserrat";
+}
 body {
+    
     background-color: #FBEDED;
+}
+:root {
+    --primary-color: #322A2A;
+}
+h1 {
+    height: fit-content;
 }
 header {
     display: flex;
@@ -10,8 +20,9 @@ header {
     padding: 10px 30px;
 }
 .header_text {
-    font-family: "Montserrat";
     letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 18px;
 }
 .logo img {
     width: 60px;
@@ -21,6 +32,17 @@ header {
 .logo {
     width: 60px;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    height: 480px;
+    background-color: #939393;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* Burger-styles */
 .burger_menu {
   display: flex;
   flex-direction: column;
@@ -35,7 +57,6 @@ header {
   margin: 2px 0;
   transition: 0.4s;
 }
-
 .burger_menu.active + nav {
     display: block;
 }
@@ -48,3 +69,4 @@ nav {
     width: 100%;
     align-content: center;
 }
+/* Burger-styles-end */
