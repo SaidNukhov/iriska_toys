@@ -1,22 +1,18 @@
 * {
     font-family: "Montserrat";
 }
-body {
-    
-    background-color: #FBEDED;
-}
 :root {
     --primary-color: #322A2A;
 }
-h1 {
-    height: fit-content;
+body {   
+    background-color: #FBEDED;
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #FFE2E2;
-    height: 80px;
+    height: 40px;
     padding: 10px 30px;
 }
 .header_text {
@@ -25,23 +21,46 @@ header {
     font-size: 18px;
 }
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 .logo {
-    width: 60px;
+    width: 30px;
 }
+/* Main */
 .hero {
     display: flex;
-    justify-content: center;
-    padding: 5px 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
     height: 480px;
     background-color: #939393;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
+.hero h1 {
+    height: fit-content;
+    margin-bottom: 10px;
+}
+b {
+    font-weight: 300;
+}
+.hero-img {
+    display: flex;
+    margin-bottom: 5px;
+}
+.span {
+    font-size: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.hero-button {
+    width: 88px;
+    height: 28px;
+}
+/* Main-end */
 /* Burger-styles */
 .burger_menu {
   display: flex;
@@ -51,8 +70,8 @@ header {
   width: 30px;
 }
 .burger_menu span {
-  height: 4px;
-  width: 30px;
+  height: 2px;
+  width: 25px;
   background-color: #333;
   margin: 2px 0;
   transition: 0.4s;
