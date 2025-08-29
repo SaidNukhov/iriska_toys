@@ -1,17 +1,17 @@
 html {
     font-family: "Montserrat";
     font-size: 62.5%; /* 1rem = 10px (10px / 16px = 0.625) */
+    font-weight: 400;
     background-color: #FBEDED;
 }
-:root {
-    --primary-color: #322A2A;
-}
+b {font-weight: 300; opacity: 0.9;}
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 9vh;
     padding: 0 3rem;
+    background-color: #FBEDED;
 }
 .logo img {
     border-radius: 50%;
@@ -25,6 +25,22 @@ header {
 main {
     color: #ffffff;
     background-color: #939393;
+}
+h1 {
+    font-size: 1.6rem;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+    gap: 2vh;
+}
+.hero-img {
+    display: flex;
 }
 
 /* Burger-styles */
