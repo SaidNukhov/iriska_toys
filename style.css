@@ -1,4 +1,5 @@
 html {
+    color: #FAEAEA;
     font-family: "Montserrat";
     font-size: 62.5%; /* 1rem = 10px (10px / 16px = 0.625) */
     font-weight: 400;
@@ -19,16 +20,19 @@ header {
     height: 7vh;
 }
 .header_text {
+    color: #000;
     font-size: 1.5rem;
     letter-spacing: 0.4rem;
 }
+
+/* Main */
 main {
     color: #ffffff;
     background-color: #939393;
 }
 h1 {
-    font-size: 1.6rem;
-    width: 80%;
+    font-size: 1.4rem;
+    width: 80vw;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -42,6 +46,31 @@ h1 {
 .hero-img {
     display: flex;
 }
+.hero_bottom_text {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 90vw;
+}
+.link-pin {
+    color: lightblue;
+}
+.hero-button {
+    width: 20vw;
+    height: 7vh;
+    background-color: #967B7B;
+    color: #FCF2F2;
+    border: 1px solid #DEA6A6;
+    border-radius: 10%;
+}
+.wall {
+    text-align: center;
+    width: 100vw;
+    background-color: #322A2A ;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding: 2%;
+}
+/* Main */
 
 /* Burger-styles */
 .burger_menu {
@@ -74,6 +103,7 @@ nav {
     color: #fff;
     background-color: #333;
     border-radius: 10% 0 0 10%;
+    z-index: 1000;
 }
 ul {
     display: flex;
