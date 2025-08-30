@@ -31,7 +31,7 @@ main {
     background-color: #939393;
 }
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 80vw;
     text-align: center;
     letter-spacing: 1px;
@@ -44,23 +44,30 @@ h1 {
     gap: 2vh;
 }
 .hero-img {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+}
+.hero-img img {
+    width: 100vw;
 }
 .hero_bottom_text {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-align: center;
-    width: 90vw;
+    width: 99vw;
 }
 .link-pin {
     color: lightblue;
 }
 .hero-button {
     width: 20vw;
-    height: 7vh;
+    height: 4vh;
+    max-height: 5vh;
     background-color: #967B7B;
     color: #FCF2F2;
     border: 1px solid #DEA6A6;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 .wall {
     text-align: center;
