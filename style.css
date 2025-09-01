@@ -33,6 +33,7 @@ main {
 h1 {
     font-size: 1.6rem;
     text-align: center;
+    width: 95vw;
     letter-spacing: 1px;
 }
 .hero {
@@ -56,9 +57,10 @@ h1 {
 .hero_bottom_text {
     font-size: 1.4rem;
     text-align: center;
-    width: 99vw;
+    width: 95vw;
 }
 .link-pin {
+    font-size: 1.6rem;
     color: lightblue;
 }
 .hero-button {
