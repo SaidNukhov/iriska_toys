@@ -5,7 +5,7 @@ html {
     font-weight: 400;
     background-color: #FBEDED;
 }
-b {font-weight: 300; opacity: 0.9;}
+b {font-weight: 300; opacity: 0.7;}
 header {
     display: flex;
     align-items: center;
@@ -21,7 +21,8 @@ header {
 }
 .header_text {
     color: #000;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 25px);
+    opacity: 0.6;
     letter-spacing: 0.4rem;
 }
 
@@ -31,8 +32,8 @@ main {
     background-color: #939393;
 }
 h1 {
-    font-size: 1.6rem;
     text-align: center;
+    font-size: 5vw;
     width: 95vw;
     letter-spacing: 1px;
 }
@@ -40,8 +41,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1vh 0;
-    gap: 1vh;
 }
 .hero-img {
     display: grid;
@@ -54,30 +53,11 @@ h1 {
     border: 2px solid #ECB7B7;
     border-radius: 10px;
 }
-.hero_bottom_text {
-    font-size: 1.4rem;
-    text-align: center;
-    width: 95vw;
-}
-.link-pin {
-    font-size: 1.6rem;
-    color: lightblue;
-}
-.hero-button {
-    width: 30vw;
-    height: 8vh;
-    max-height: 6vh;
-    background-color: #967B7B;
-    color: #FCF2F2;
-    border: 1px solid #DEA6A6;
-    border-radius: 10px;
-    font-size: 1.6rem;
-}
-.wall {
+.text_catalog { /*Именно сам текст "Каталог"*/
     text-align: center;
     width: 100vw;
     background-color: #322A2A ;
-    font-size: 1.4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     padding: 2%;
 }
@@ -88,8 +68,7 @@ h1 {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    height: 50vh;
-    padding: 3%;
+    padding: 2%;
     gap: 3%;
 }
 .catalog_item {
@@ -152,7 +131,110 @@ ul {
     align-items: center;
 }
 li {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     padding: 1rem 0;
+    transition: 0.2s ease-in-out;
+}
+li:hover {
+  color: #000;
 }
 /* Burger-styles-end */
+
+/* 600px */
+@media (min-width: 600px) {
+  h1 {
+    font-size: clamp(1.6rem, 5vw, 32px); 
+  }
+}
+/* 600px */
+
+/* 900px */
+@media (min-width: 900px) {
+  h1 {
+    font-size: clamp(1.6rem, 5vw, 37px); 
+  }
+}
+/* 900px */
+
+/* 1000px */
+@media (min-width: 1000px) {
+  header {
+    height: 10vh;
+  }
+  .logo img {
+    width: 9vh;
+    height: 9vh;
+  } 
+}
+/* 1000px */
+
+/* 1200px */
+@media (max-width: 1200px) {
+  .hero_third_image {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* Main */
+  h1 {
+    font-size: clamp(1.6rem, 5vw, 45px); 
+  }
+  .hero-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero_third_image {
+    display: inline;
+  }
+  .hero-img img {
+    width: 100vw;
+    height: 100%;
+  }
+  /* Main */
+
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    display: grid;
+    justify-items: center;
+    position: inherit;
+    top: 0;
+    width: auto;
+    background-color: #FBEDED;
+    color: #555;
+    font-style: italic;
+  }
+  ul {
+    flex-direction: row;
+    gap: 4vw
+  }
+  li:hover {
+    color: white;
+  }
+  .burger_menu {
+    display: none;
+  } 
+  .header_text {
+    display: none;
+  }
+  /* Heaader */
+
+}
+/* 1200px */
+
+/* 1600px */
+@media (min-width: 1600px) {
+  header {
+    height: 12vh;
+  }
+  .logo img {
+    width: 11vh;
+    height: 11vh;
+  } 
+  li {
+    font-size: 2.7rem;
+  }
+}
+/* 1600px */
