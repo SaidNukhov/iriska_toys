@@ -97,7 +97,7 @@ h2 {
   font-weight: bolder;
 }
 .catalog-button {
-    height: 5vh;
+    height: 10vh;
     width: 100%;
     background-color: #322A2A;
     color: #fff;
@@ -300,6 +300,9 @@ li:hover {
 @media (max-width: 1200px) {
   .hero_third_image {
     display: none;
+  }
+  .modal {
+    margin-top: 50%;
   }
 }
 @media (min-width: 1200px) {
