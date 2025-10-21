@@ -48,7 +48,8 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
 }
 .hero-img img {
-    height: 100%;
+    height: auto;
+    object-fit: contain;
     border: 2px solid #ECB7B7;
     border-radius: 10px;
 }
