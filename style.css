@@ -82,12 +82,11 @@ h1 {
     border-radius: 30px 30px 0 0 ;
     gap: 10px;
     transition: 0.3s ease-in-out;
-    height: 88%; /*Last_change*/
 }
-.catalog_item img{
-  height: 70%; /*Last_change*/
+.catalog_item img{ 
   border-radius: 30px; 
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .catalog_item:hover {
   transform: scale(102%);
@@ -98,18 +97,15 @@ h2 {
 }
 .catalog_text {
   font-size: 1.8rem;
-  gap: 10px;
-  flex: 1; /*Last_change*/
 }
 .catalog-button {
-    height: 8vh;
+    height: 5vh;
     width: 100%;
     background-color: #322A2A;
     color: #fff;
     font-size: 2.2rem;
     border: none;
     transition: 0.6s ease-in-out;
-    flex: 1; /*Last_change*/
 }
 .catalog-button:hover {
   background-color: #555;
@@ -296,6 +292,9 @@ li:hover {
   }
   .text_catalog {
     font-size: 3rem;
+  } 
+  .catalog-button {
+    height: 7vh;
   } 
 }
 /* 1000px */
